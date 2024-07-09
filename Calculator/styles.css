@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFD9C0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 100vh;
+}
+
+.head {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.mainContainer {
+    width: 390px;
+    padding: 20px;
+    border: 5px solid #fbc49f;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.btn, .input {
+    flex: 1;
+    margin: 5px;
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbc49f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFD9C0;
+}
+
+.input {
+    flex: 5; /* Increase flex-grow to make it wider */
+    background-color: #fff;
+    color: #333;
+    text-align: right;
+    border: 1px solid #ccc;
+    padding: 10px; /* Adjust padding for better appearance */
+}
+
+.btn-round {
+    background-color: goldenrod;
+    color: white;
+    padding: 10px; /* Adjust padding for better appearance */
+}
+
+.bg-gr {
+    background-color: #DDD;
+    color: goldenrod;
+}
+
+.input:focus {
+    outline: none;
+    border-color: goldenrod;
+}
